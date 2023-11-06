@@ -1,0 +1,43 @@
+.grid-container {
+  display: grid;
+  grid-gap: 16px;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-auto-rows: 200px;
+}
+.dropArea {
+  position: relative;
+}
+.dropArea::before {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background-color: #ebebeb;
+}
+
+.item-first {
+  grid-row: span 2;
+  grid-column: span 2;
+}
+
+.image-design {
+  width: 80%;
+  margin: auto;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.image-container:hover {
+  opacity: 0.6;
+}
+
+.image-container input {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
