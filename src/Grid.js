@@ -1,6 +1,5 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { ReactSortable } from "react-sortablejs";
-import GridItem from "./GridItem";
 import GridAddItem from "./GridAddItem";
 
 const images = [
